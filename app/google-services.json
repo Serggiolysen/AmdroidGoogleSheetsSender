@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "260456142787",
+    "project_id": "imgetest",
+    "storage_bucket": "imgetest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260456142787:android:ce9866e82f00e623a7cf76",
+        "android_client_info": {
+          "package_name": "com.lys.passimage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260456142787-tr82cfhfjavoop6614ssrtuneprub035.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5RxZM_8qOGBL5MWwuvv5YSqt739tkOlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260456142787-tr82cfhfjavoop6614ssrtuneprub035.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260456142787:android:4a5f4fe14ff7d958a7cf76",
+        "android_client_info": {
+          "package_name": "one.hix.qqqqqqqqqq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260456142787-tr82cfhfjavoop6614ssrtuneprub035.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5RxZM_8qOGBL5MWwuvv5YSqt739tkOlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260456142787-tr82cfhfjavoop6614ssrtuneprub035.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
