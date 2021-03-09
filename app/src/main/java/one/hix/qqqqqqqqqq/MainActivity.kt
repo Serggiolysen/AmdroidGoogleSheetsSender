@@ -49,71 +49,25 @@ class MainActivity : AppCompatActivity() {
     private var mEditTextFileName: EditText? = null
     private var mImageView: ImageView? = null
     private var mImageUri: Uri? = null
-    private var fireStorageUri: String? = null
 
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-
-
-
+    private fun initViews() {
         mButtonChooseImage = findViewById(R.id.button_choose_image)
         mButtonUpload = findViewById(R.id.button_upload)
         mEditTextFileName = findViewById(R.id.edit_text_file_name)
         mImageView = findViewById(R.id.image_view)
 
+    }
 
-        mButtonChooseImage?.setOnClickListener {
-            openFileChooser()
-        }
-        mButtonUpload?.setOnClickListener {
-            uploadFile()
-        }
-//        mButtonShow?.setOnClickListener {
-//            val storageReference = Firebase.storage.reference
-//
-//            Glide.with(this /* context */)
-//                .load(storageReference)
-//                .into(mImageView!!)
-//
-//
-//
-//            val ref = storageReference.child("1612543899986.jpg")
-//            val localFile = File.createTempFile("images", "jpg")
-//
-//            ref.getFile(localFile).addOnSuccessListener {
-//                // Local temp file has been created
-//            }.addOnFailureListener {
-//                // Handle any errors
-//            }
-//        }
-//
-//        val user: MutableMap<String, Any> = HashMap()
-//        user["first"] = "Ada"
-//        user["last"] = "Lovelace"
-//        user["born"] = 1815
-// Add a new document with a generated ID
-//        firebaseFirestore.document()
-//            .addOnSuccessListener { documentReference ->
-//                println("3ss  DocumentSnapshot added with ID: ${documentReference.id}")
-//            }
-//            .addOnFailureListener { e ->
-//                println("3ss  Error adding document, $e")
-//            }
-//
-//        firebaseFirestore.collection("user1")
-//            .get()
-//            .addOnCompleteListener { task ->
-//                if (task.isSuccessful) {
-//                    for (document in task.result!!) {
-//                        println("3ss ${document.id} =>  ${document.data}")
-//                    }
-//                } else {
-//                    println("3ss   Error getting documents.${task.exception}")
-//                }
-//            }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setContentView(R.layout.activity_main)
+        initViews()
+
+        mButtonChooseImage?.setOnClickListener { openFileChooser() }
+
+        mButtonUpload?.setOnClickListener { uploadFile() }
 
     }
 
@@ -157,7 +111,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun update2(url :String) {
+    fun update2(url: String) {
         ++count
         ++count
         val body =
